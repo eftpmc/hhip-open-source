@@ -34,7 +34,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 p-4 flex flex-col items-start">
             <h1 className="text-5xl font-bold mb-4">Seamless Parking Management</h1>
-            <p className="text-lg mb-4">Say goodbye to the hassle and inconveniences of traditional towing,<br></br> and welcome the future of parking enforcement with HHIP.<br></br> Discover why HHIP is the superior choice compared to towing.</p>
+            <p className="text-lg mb-4">Say goodbye to the hassle and inconveniences of traditional towing, and welcome the future of parking enforcement with HHIP. Discover why HHIP is the superior choice compared to towing.</p>
             <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
               Get a Quote
             </button>
@@ -187,36 +187,34 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-center p-8 bg-white flex flex-col items-center relative">
-        {/* SVG background */}
-        <div className="absolute inset-0 z-0">
-          <Image src="/SAND.svg" layout="fill" objectFit="cover" objectPosition="top" alt="Background" />
-        </div>
+  {/* SVG background */}
+  <div className="absolute inset-0 z-0">
+    <Image src="/SAND.svg" layout="fill" objectFit="cover" objectPosition="top" alt="Background" />
+  </div>
 
-        {/* Content */}
-        <div className="flex flex-col items-center z-10">
+  {/* Content */}
+  <div className="flex flex-col items-center z-10">
+    <div className="relative mb-4">
+      <Image src="/BEACH.svg" alt="beach" width={300} height={200} className="rounded-lg relative md:bottom-0 bottom-[150px]" />
+    </div>
+    <div className="grid grid-cols-3 items-center">
+      <Image src="/White.png" alt="Logo" width={50} height={50} />
+      <div className=" flex flex-col p-8">
+        <h1 className="text-md text-navy font-bold p-2">NAVIGATION</h1>
+        <a href="#why" className="text-white font-bold p-2 text-md">Why?</a>
+        <a href="#how" className="text-white font-bold p-2 text-md">How it works</a>
+        <a href="#benefits" className="text-white font-bold p-2 text-md">Benefits</a>
+      </div>
+      <div className="p-8">
+        <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
+          Get a Quote
+        </button>
+      </div>
+    </div>
+  </div>
+  <a className="py-4" href="https://github.com/eftpmc"><LuGithub className="text-navy" /></a>
+</footer>
 
-          <div className="relative mb-4">
-            <Image src="/BEACH.svg" alt="beach" width={300} height={200} className="rounded-lg relative md:bottom-0 bottom-[150px]" />
-          </div>
-          <div className="grid grid-cols-3 items-center">
-          <Image src="/White.png" alt="Logo" width={50} height={50} />
-            <div className=" flex flex-col p-8">
-              <h1 className="text-md text-navy font-bold p-2">NAVIGATION</h1>
-              <a href="#why" className="text-white font-bold p-2 text-md">Why?</a>
-              <a href="#how" className="text-white font-bold p-2 text-md">How it works</a>
-              <a href="#benefits" className="text-white font-bold p-2 text-md">Benefits</a>
-            </div>
-            <div className="p-8">
-              <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
-                Get a Quote
-              </button>
-            </div>
-          </div>
-
-
-        </div>
-        <a className="py-4" href="https://github.com/eftpmc"><LuGithub className="text-navy" /></a>
-      </footer>
     </main>
   );
 }
