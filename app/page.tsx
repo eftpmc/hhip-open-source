@@ -1,113 +1,222 @@
 import Image from "next/image";
+import { LuLock, LuTag, LuBird, LuSmile, LuWallet, LuVenetianMask, LuCog, LuPhone, LuGithub } from "react-icons/lu";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="container mx-auto">
+      {/* Header */}
+      <header className="flex justify-between items-center p-4 pt-0 bg-blue">
+        {/* Logo */}
+        <div>
+          <Image src="/White.png" alt="Logo" width={50} height={50} />
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        {/* Navigation */}
+        <nav className="flex-grow text-right">
+          <ul className="flex justify-end space-x-8 p-8">
+            <li><a href="#why" className="text-white font-bold">Why?</a></li>
+            <li><a href="#how" className="text-white font-bold">How it works</a></li>
+            <li><a href="#benefits" className="text-white font-bold">Benefits</a></li>
+          </ul>
+        </nav>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        {/* Get a Quote Button */}
+        <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
+          Get a Quote
+        </button>
+      </header>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section id="hero" className="p-8 bg-blue flex flex-col items-center">
+        {/* Left Side: Header, Body, and Get a Quote Button */}
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="md:w-1/2 p-4 flex flex-col items-end">
+            <Image src="/Hero.svg" alt="art" width={600} height={600} className="bg-blue rounded-md drop-shadow-md" />
+          </div>
+          <div className="md:w-1/2 p-4 flex flex-col items-start">
+            <h1 className="text-5xl font-bold mb-4">Seamless Parking Management</h1>
+            <p className="text-lg mb-4">Say goodbye to the hassle and inconveniences of traditional towing,<br></br> and welcome the future of parking enforcement with HHIP.<br></br> Discover why HHIP is the superior choice compared to towing.</p>
+            <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
+              Get a Quote
+            </button>
+          </div>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <h1 className="text-xl font-bold mt-16 p-4">We cater to:</h1>
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <p className="text-md font-bold p-4">Municipalities</p>
+          <p className="text-md font-bold p-4">Homeowners<br></br>Associations</p>
+          <p className="text-md font-bold p-4">Commercial<br></br>Parking Lots</p>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      {/* Content Sections */}
+      <section id="why" className="p-8 bg-white">
+        <div className="mx-auto w-full p-8">
+          {/* Section Heading */}
+          <div className="text-center mb-8 p-4">
+            <h2 className="text-xl font-bold text-yellow py-4">WHY THIS PRODUCT</h2>
+            <h3 className="text-3xl font-bold text-blue pb-8">Why Choose HHIP?</h3>
+          </div>
+
+          {/* Card Container */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center">
+            {/* Card 1 */}
+            <div className="bg-gray-100 p-6 rounded-lg drop-shadow-lg max-w-sm">
+              <Image src="/Map.svg" alt="service1" width={300} height={200} className="mb-4 rounded-lg" />
+              <h4 className="text-xl font-bold mb-2 text-navy">Random, Unbiased Inspections</h4>
+              <p className="text-navy font-light">Our inspections are conducted randomly, ensuring a fair assessment without focusing on specific individuals or areas.</p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-gray-100 p-6 rounded-lg drop-shadow-lg max-w-sm">
+              <Image src="/Anon.svg" alt="service2" width={300} height={200} className="mb-4 rounded-lg" />
+              <h4 className="text-xl font-bold mb-2 text-navy">Neutral Third-Party Resolution</h4>
+              <p className="text-navy font-light">HHIPE serves as a completely neutral third party, eliminating disputes between neighbors or management. Our goal is to create a harmonious parking environment for all.</p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-gray-100 p-6 rounded-lg drop-shadow-lg max-w-sm">
+              <Image src="/Pictures.svg" alt="service3" width={300} height={200} className="mb-4 rounded-lg" />
+              <h4 className="text-xl font-bold mb-2 text-navy">Photographic Documentation</h4>
+              <p className="text-navy font-light">Every violation is thoroughly documented with photos, providing clear evidence for effective resolution. This method reduces the potential for dispute.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how" className="p-8 pb-16 bg-white">
+        <div className="mx-auto w-full pt-8">
+          {/* Section Heading */}
+          <div className="text-center mb-8 p-4">
+            <h2 className="text-xl font-bold text-yellow py-4">HOW IT WORKS</h2>
+            <h3 className="text-3xl font-bold text-blue pb-4">Our Method</h3>
+          </div>
+
+          {/* Card Container */}
+          <div className="grid grid-cols-1 gap-8 p-2 md:p-4 py-0 items-center justify-items-center">
+            {/* Card 1 */}
+            <div className="bg-blue p-6 rounded-lg drop-shadow-lg max-w-3xl grid grid-cols-1 md:grid-cols-2">
+              <Image src="/TIRE.png" alt="service1" width={300} height={200} className="mb-4 rounded-lg" />
+              <div className="flex flex-col justify-center">
+                <h4 className="text-md font-bold text-yellow pb-4">STEP 1</h4>
+                <h4 className="text-xl font-bold mb-2 text-white">Random, Unbiased Inspections</h4>
+                <p className="text-white font-light">Our inspections are conducted randomly, ensuring a fair assessment without focusing on specific individuals or areas.</p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-blue p-6 rounded-lg drop-shadow-lg max-w-3xl grid grid-cols-1 md:grid-cols-2">
+              <Image src="/TAG.png" alt="service2" width={300} height={200} className="mb-4 rounded-lg" />
+              <div className="flex flex-col justify-center">
+                <h4 className="text-md font-bold text-yellow pb-4">STEP 2</h4>
+                <h4 className="text-xl font-bold mb-2 text-white">Neutral Third-Party Resolution</h4>
+                <p className="text-white font-light">HHIPE serves as a completely neutral third party, eliminating disputes between neighbors or management. Our goal is to create a harmonious parking environment for all.</p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-blue p-6 rounded-lg drop-shadow-lg max-w-3xl grid grid-cols-1 md:grid-cols-2">
+              <Image src="/DROPBOX.png" alt="service3" width={300} height={200} className="mb-4 rounded-lg" />
+              <div className="flex flex-col justify-center">
+                <h4 className="text-md font-bold text-yellow pb-4">STEP 3</h4>
+                <h4 className="text-xl font-bold mb-2 text-white">Photographic Documentation</h4>
+                <p className="text-white font-light">Every violation is thoroughly documented with photos, providing clear evidence for effective resolution. This method reduces the potential for dispute.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="benefits" className="p-8 px-16 bg-blue">
+        <div className="mx-auto w-full">
+          <div className="text-center mb-8 p-4">
+            <h2 className="text-xl font-bold text-yellow py-4">BENEFITS</h2>
+            <h3 className="text-3xl font-bold text-white pb-8">What we do Differently</h3>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+            <div className="p-4 rounded-lg flex flex-col items-left">
+              <LuLock className="text-yellow text-4xl mb-4" />
+              <h4 className="text-xl font-bold text-white mb-2">Safety and Security First</h4>
+              <p className="text-white font-light text-left">Towing can sometimes damage vehicles, leaving you with costly repairs. HHIPE ensures your vehicle remains in pristine condition, with zero risk of damage.</p>
+            </div>
+
+            <div className="p-4 rounded-lg flex flex-col items-left">
+              <LuTag className="text-yellow text-4xl mb-4" />
+              <h4 className="text-xl font-bold text-white mb-4">Minimal Disruption</h4>
+              <p className="text-white font-light text-left">Towing can disrupt your day, forcing you to arrange for pickup and transportation. With HHIPE, you can remove the tag yourself within minutes, getting you back on the road quickly.</p>
+            </div>
+
+            <div className="p-4 rounded-lg flex flex-col items-left">
+              <LuBird className="text-yellow text-4xl mb-4" />
+              <h4 className="text-xl font-bold text-white mb-4">Peace of Mind</h4>
+              <p className="text-white font-light text-left">When your car gets towed, it's easy to assume it's been stolen, leading to confusion, anxiety, and stress. With HHIPE, your car is exactly where you left it, and our clear instructions on your vehicle guide you through the simple tag removal process. In minutes, you're on your way, stress-free.</p>
+            </div>
+
+            <div className="p-4 rounded-lg flex flex-col items-left">
+              <LuSmile className="text-yellow text-4xl mb-4" />
+              <h4 className="text-xl font-bold text-white mb-4">Conflict Resolution</h4>
+              <p className="text-white font-light text-left">Towing often leads to confrontations and unpleasant encounters. With HHIPE, we eliminate any potential confrontations, making the entire process stress-free for everyone involved.</p>
+            </div>
+
+            <div className="p-4 rounded-lg flex flex-col items-left">
+              <LuWallet className="text-yellow text-4xl mb-4" />
+              <h4 className="text-xl font-bold text-white mb-4">Payment Flexibility</h4>
+              <p className="text-white font-light text-left">Towing companies often demand cash payments, limiting your options. HHIPE accepts all major credit cards, offering you a hassle-free payment experience.</p>
+            </div>
+
+            <div className="p-4 rounded-lg flex flex-col items-left">
+              <LuVenetianMask className="text-yellow text-4xl mb-4" />
+              <h4 className="text-xl font-bold text-white mb-4">Privacy and Discretion</h4>
+              <p className="text-white font-light text-left">Towing can be a public embarrassment, but HHIPE operates discreetly. Your vehicle remains tagged, avoiding the embarrassment of public removal.</p>
+            </div>
+
+            <div className="p-4 rounded-lg flex flex-col items-left">
+              <LuCog className="text-yellow text-4xl mb-4" />
+              <h4 className="text-xl font-bold text-white mb-4">Efficiency Redefined</h4>
+              <p className="text-white font-light text-left">Traditional towing requires one tow truck per vehicle, leading to significant inefficiency. With HHIPE, one person can efficiently manage up to 10 HHIPE tags, making our method highly cost-effective and quick.</p>
+            </div>
+
+            <div className="p-4 rounded-lg flex flex-col items-left">
+              <LuPhone className="text-yellow text-4xl mb-4" />
+              <h4 className="text-xl font-bold text-white mb-4">Convenience at Your Fingertips</h4>
+              <p className="text-white font-light text-left">Towing services are often far away, causing inconvenience for car owners. With HHIPE, there's no need to wait – simply scan the QR code, pay your fine and use our on-site drop box.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center p-8 bg-white flex flex-col items-center relative">
+        {/* SVG background */}
+        <div className="absolute inset-0 z-0">
+          <Image src="/SAND.svg" layout="fill" objectFit="cover" objectPosition="top" alt="Background" />
+        </div>
+
+        {/* Content */}
+        <div className="flex flex-col items-center z-10">
+
+          <div className="relative mb-4">
+            <Image src="/BEACH.svg" alt="beach" width={300} height={200} className="rounded-lg relative md:bottom-0 bottom-[150px]" />
+          </div>
+          <div className="grid grid-cols-3 items-center">
+          <Image src="/White.png" alt="Logo" width={50} height={50} />
+            <div className=" flex flex-col p-8">
+              <h1 className="text-md text-navy font-bold p-2">NAVIGATION</h1>
+              <a href="#why" className="text-white font-bold p-2 text-md">Why?</a>
+              <a href="#how" className="text-white font-bold p-2 text-md">How it works</a>
+              <a href="#benefits" className="text-white font-bold p-2 text-md">Benefits</a>
+            </div>
+            <div className="p-8">
+              <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
+                Get a Quote
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+        <a className="py-4" href="https://github.com/eftpmc"><LuGithub className="text-navy" /></a>
+      </footer>
     </main>
   );
 }

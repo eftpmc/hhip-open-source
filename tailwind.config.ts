@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        blue: "hsl(var(--blue))",
+        yellow: "hsl(var(--yellow))",
+        navy: "hsl(var(--navy))",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
