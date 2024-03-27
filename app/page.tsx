@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </div>
 
-        <h1 className="text-xl font-bold mt-16 p-4">We cater to</h1>
+        <h1 className="text-xl font-bold mt-16 p-4">We cater to:</h1>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-md font-bold p-4">Municipalities</p>
           <p className="text-md font-bold p-4">Homeowners<br></br>Associations</p>
@@ -148,7 +148,7 @@ export default function Home() {
             <div className="p-4 rounded-lg flex flex-col items-left">
               <LuBird className="text-yellow text-4xl mb-4" />
               <h4 className="text-xl font-bold text-white mb-4">Peace of Mind</h4>
-              <p className="text-white font-light text-left">When your car gets towed, it's easy to assume it's been stolen, leading to confusion, anxiety, and stress. With HHIPE, your car is exactly where you left it, and our clear instructions on your vehicle guide you through the simple tag removal process. In minutes, you're on your way, stress-free.</p>
+              <p className="text-white font-light text-left">When your car gets towed, it&apos;s easy to assume it&apos;s been stolen, leading to confusion, anxiety, and stress. With HHIPE, your car is exactly where you left it, and our clear instructions on your vehicle guide you through the simple tag removal process. In minutes, you&apos;re on your way, stress-free.</p>
             </div>
 
             <div className="p-4 rounded-lg flex flex-col items-left">
@@ -178,7 +178,7 @@ export default function Home() {
             <div className="p-4 rounded-lg flex flex-col items-left">
               <LuPhone className="text-yellow text-4xl mb-4" />
               <h4 className="text-xl font-bold text-white mb-4">Convenience at Your Fingertips</h4>
-              <p className="text-white font-light text-left">Towing services are often far away, causing inconvenience for car owners. With HHIPE, there's no need to wait – simply scan the QR code, pay your fine and use our on-site drop box.</p>
+              <p className="text-white font-light text-left">Towing services are often far away, causing inconvenience for car owners. With HHIPE, there&apos;s no need to wait – simply scan the QR code, pay your fine and use our on-site drop box.</p>
             </div>
 
           </div>
