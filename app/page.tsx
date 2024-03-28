@@ -26,7 +26,7 @@ export default function Home() {
         </button>
       </header>
 
-      <section id="hero" className="p-8 bg-blue flex flex-col items-center">
+      <section id="hero" className="p-12 bg-blue flex flex-col items-center">
         {/* Left Side: Header, Body, and Get a Quote Button */}
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 p-4 flex flex-col items-end">
