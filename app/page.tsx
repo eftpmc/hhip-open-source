@@ -98,8 +98,8 @@ export default function Home() {
               <Image src="/TIRE.png" alt="service1" width={300} height={200} className="mb-4 rounded-lg" />
               <div className="flex flex-col justify-center">
                 <h4 className="text-md font-bold text-yellow pb-4">STEP 1</h4>
-                <h4 className="text-xl font-bold mb-2 text-white">Random, Unbiased Inspections</h4>
-                <p className="text-white font-light">Our inspections are conducted randomly, ensuring a fair assessment without focusing on specific individuals or areas.</p>
+                <h4 className="text-xl font-bold mb-2 text-white">Unauthorized Parking.</h4>
+                <p className="text-white font-light">A vehicle is parked in an unauthorized location creating a violation. No Parking Zone, Handicapped Parking, Fire Zone, Reserved/ Permit Parking.</p>
               </div>
             </div>
 
@@ -108,8 +108,8 @@ export default function Home() {
               <Image src="/TAG.png" alt="service2" width={300} height={200} className="mb-4 rounded-lg" />
               <div className="flex flex-col justify-center">
                 <h4 className="text-md font-bold text-yellow pb-4">STEP 2</h4>
-                <h4 className="text-xl font-bold mb-2 text-white">Neutral Third-Party Resolution</h4>
-                <p className="text-white font-light">HHIPE serves as a completely neutral third party, eliminating disputes between neighbors or management. Our goal is to create a harmonious parking environment for all.</p>
+                <h4 className="text-xl font-bold mb-2 text-white">Tagging and Recording Violation.</h4>
+                <p className="text-white font-light">Enforcement agent “tags” the vehicle with a device and decal, then enters the violation information into the system portal.</p>
               </div>
             </div>
 
@@ -118,8 +118,8 @@ export default function Home() {
               <Image src="/DROPBOX.png" alt="service3" width={300} height={200} className="mb-4 rounded-lg" />
               <div className="flex flex-col justify-center">
                 <h4 className="text-md font-bold text-yellow pb-4">STEP 3</h4>
-                <h4 className="text-xl font-bold mb-2 text-white">Photographic Documentation</h4>
-                <p className="text-white font-light">Every violation is thoroughly documented with photos, providing clear evidence for effective resolution. This method reduces the potential for dispute.</p>
+                <h4 className="text-xl font-bold mb-2 text-white">Tire Tag Removal.</h4>
+                <p className="text-white font-light">When a violator finds a Tire Tag on their vehicle, they simply need to visit TheTireTag.com. There, they'll enter the device's serial number and their payment information. Upon payment, we immediately provide a release code to remove the Tire Tag. The device should then be dropped off at any nearby marked drop box within 24 hours to avoid extra fees.</p>
               </div>
             </div>
           </div>
