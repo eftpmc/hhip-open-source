@@ -195,7 +195,7 @@ export default function Home() {
         {/* Content */}
         <div className="flex flex-col items-center z-10">
           <div className="relative mb-4">
-            <Image src="/BEACH.svg" alt="beach" width={300} height={200} className="rounded-lg relative md:bottom-0 bottom-[150px]" />
+            <Image src="/BEACH.svg" alt="beach" width={300} height={200} className="rounded-lg" />
           </div>
           <div className="grid grid-cols-3 items-center">
             <Image src="/White.png" alt="Logo" width={50} height={50} />
