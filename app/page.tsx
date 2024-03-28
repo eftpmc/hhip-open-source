@@ -119,7 +119,7 @@ export default function Home() {
               <div className="flex flex-col justify-center">
                 <h4 className="text-md font-bold text-yellow pb-4">STEP 3</h4>
                 <h4 className="text-xl font-bold mb-2 text-white">Tire Tag Removal.</h4>
-                <p className="text-white font-light">When a violator finds a Tire Tag on their vehicle, they simply need to visit TheTireTag.com. There, they'll enter the device's serial number and their payment information. Upon payment, we immediately provide a release code to remove the Tire Tag. The device should then be dropped off at any nearby marked drop box within 24 hours to avoid extra fees.</p>
+                <p className="text-white font-light">When a violator finds a Tire Tag on their vehicle, they simply need to visit TheTireTag.com. There, they&apos;ll enter the device&apos;s serial number and their payment information. Upon payment, we immediately provide a release code to remove the Tire Tag. The device should then be dropped off at any nearby marked drop box within 24 hours to avoid extra fees.</p>
               </div>
             </div>
           </div>
