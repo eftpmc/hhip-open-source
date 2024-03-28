@@ -3,7 +3,7 @@ import { LuLock, LuTag, LuBird, LuSmile, LuWallet, LuVenetianMask, LuCog, LuPhon
 
 export default function Home() {
   return (
-    <main className="container mx-auto">
+    <main className="items-center">
       {/* Header */}
       <header className="flex justify-between items-center p-4 pt-0 bg-blue">
         {/* Logo */}
