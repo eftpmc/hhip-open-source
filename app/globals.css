@@ -34,3 +34,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.image-column {
+  text-align: center;
+}
+
+.image-container {
+  display: inline-block;
+}

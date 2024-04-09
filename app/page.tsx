@@ -1,19 +1,22 @@
+"use client"
+
 import Image from "next/image";
+import { useState } from 'react';
 import { LuLock, LuTag, LuBird, LuSmile, LuWallet, LuVenetianMask, LuCog, LuPhone, LuGithub } from "react-icons/lu";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   return (
     <main className="items-center">
       {/* Header */}
       <header className="flex justify-between items-center p-4 pt-0 bg-blue">
         {/* Logo */}
-        <div>
           <Image src="/White.png" alt="Logo" width={50} height={50} />
-        </div>
 
         {/* Navigation */}
         <nav className="flex-grow text-right">
-          <ul className="flex justify-end space-x-8 p-8">
+          <ul className="flex justify-end space-x-8 p-8 collapse md:visible">
             <li><a href="#why" className="text-white font-bold">Why?</a></li>
             <li><a href="#how" className="text-white font-bold">How it works</a></li>
             <li><a href="#benefits" className="text-white font-bold">Benefits</a></li>
@@ -197,8 +200,12 @@ export default function Home() {
           <div className="relative mb-4">
             <Image src="/BEACH.svg" alt="beach" width={300} height={200} className="rounded-lg" />
           </div>
-          <div className="grid grid-cols-3 items-center">
-            <Image src="/White.png" alt="Logo" width={50} height={50} />
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center">
+            <div className="image-column pt-8">
+              <div className="image-container">
+                <Image src="/White.png" alt="Logo" width={50} height={50} />
+              </div>
+            </div>
             <div className=" flex flex-col p-8">
               <h1 className="text-md text-navy font-bold p-2">NAVIGATION</h1>
               <a href="#why" className="text-white font-bold p-2 text-md">Why?</a>
