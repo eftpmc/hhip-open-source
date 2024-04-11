@@ -2,31 +2,51 @@
 
 import Image from "next/image";
 import { useState } from 'react';
-import { LuLock, LuTag, LuBird, LuSmile, LuWallet, LuVenetianMask, LuCog, LuPhone, LuGithub } from "react-icons/lu";
+import { LuLock, LuTag, LuBird, LuSmile, LuWallet, LuVenetianMask, LuCog, LuPhone, LuGithub, LuMenu } from "react-icons/lu";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+  const [isOpen, setOpen] = useState(false);
+  const toggleMenu = () => setOpen(!isOpen);
+
   return (
-    <main className="items-center">
+    <main className="items-center overflow-x-hidden">
       {/* Header */}
-      <header className="flex justify-between items-center p-4 pt-0 bg-blue">
+      <header className="flex justify-between items-center p-4 bg-blue">
         {/* Logo */}
-          <Image src="/White.png" alt="Logo" width={50} height={50} />
+        <Image src="/White.png" alt="Logo" width={50} height={50} />
 
         {/* Navigation */}
         <nav className="flex-grow text-right">
-          <ul className="flex justify-end space-x-8 p-8 collapse md:visible">
+          <ul className="flex justify-end space-x-8 p-4 hidden md:flex">
             <li><a href="#why" className="text-white font-bold">Why?</a></li>
             <li><a href="#how" className="text-white font-bold">How it works</a></li>
             <li><a href="#benefits" className="text-white font-bold">Benefits</a></li>
           </ul>
         </nav>
 
-        {/* Get a Quote Button */}
-        <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
+        <button className="bg-yellow text-navy font-bold py-2 px-4 rounded hidden md:block">
           Get a Quote
         </button>
+
+        <button onClick={toggleMenu} className="bg-yellow text-navy font-bold p-4 rounded md:hidden">
+          <LuMenu size={16}></LuMenu>
+        </button>
+
+        {isOpen && (
+          <div className="absolute top-0 left-0 w-screen h-screen bg-blue z-10 overflow-hidden grid grid-cols-1 md:hidden">
+            <button
+              onClick={toggleMenu}
+              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            >
+              X
+            </button>
+            <ul className="flex justify-end space-x-8 p-4">
+              <li><a href="#why" className="text-white font-bold">Why?</a></li>
+              <li><a href="#how" className="text-white font-bold">How it works</a></li>
+              <li><a href="#benefits" className="text-white font-bold">Benefits</a></li>
+            </ul>
+          </div>
+        )}
       </header>
 
       <section id="hero" className="p-12 bg-blue flex flex-col items-center">
