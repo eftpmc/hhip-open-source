@@ -52,7 +52,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 p-4 flex flex-col items-start">
             <h1 className="text-5xl font-bold mb-4">Seamless Parking Management</h1>
-            <p className="text-lg mb-4">Say goodbye to the hassle and inconveniences of traditional towing, and welcome the future of parking enforcement with HHIPE. Discover why HHIPE is the superior choice compared to towing.</p>
+            <p className="text-lg mb-4">Say goodbye to the hassle and inconveniences of traditional towing, and welcome the future of parking enforcement with HHIPE. Efficiently handle violations with our simple tag-and-pay system, avoid towing damage, and enjoy the convenience of immediate, hassle-free resolution.</p>
             <a className="bg-yellow text-navy font-bold py-2 px-4 rounded" href="mailto:gregg@digital-diversity.com">
             Get a Quote
             </a>
