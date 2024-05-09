@@ -12,38 +12,33 @@ export default function Home() {
     <main className="items-center overflow-x-hidden">
       {/* Header */}
       <header className="flex justify-between items-center p-4 bg-blue">
-        {/* Logo */}
-        <Image src="/White.png" alt="Logo" width={50} height={50} />
+        <Image src="/LOGODARKWEB.png" alt="Logo" width={200} height={100} quality={100}/>
 
-        {/* Navigation */}
-        <nav className="flex-grow text-right">
-          <ul className="flex justify-end space-x-8 p-4 hidden md:flex">
+        <nav className="hidden md:block">
+          <ul className="flex justify-end space-x-8 p-4">
             <li><a href="#why" className="text-white font-bold">Why?</a></li>
             <li><a href="#how" className="text-white font-bold">How it works</a></li>
             <li><a href="#benefits" className="text-white font-bold">Benefits</a></li>
           </ul>
         </nav>
 
-        <button className="bg-yellow text-navy font-bold py-2 px-4 rounded hidden md:block">
+        <a className="bg-yellow text-navy font-bold py-2 px-4 rounded hidden md:block" href="mailto:gregg@digital-diversity.com">
           Get a Quote
-        </button>
+        </a>
 
         <button onClick={toggleMenu} className="bg-yellow text-navy font-bold p-4 rounded md:hidden">
-          <LuMenu size={16}></LuMenu>
+          <LuMenu size={24}></LuMenu>
         </button>
 
         {isOpen && (
-          <div className="absolute top-0 left-0 w-screen h-screen bg-blue z-10 overflow-hidden grid grid-cols-1 md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-            >
+          <div className="absolute top-0 left-0 w-screen h-screen bg-blue z-10 overflow-hidden grid place-items-center">
+            <button onClick={toggleMenu} className="rounded-md p-2 px-4 inline-flex items-center justify-center text-white hover:text-yellow absolute top-4 right-4">
               X
             </button>
-            <ul className="flex justify-end space-x-8 p-4">
-              <li><a href="#why" className="text-white font-bold">Why?</a></li>
-              <li><a href="#how" className="text-white font-bold">How it works</a></li>
-              <li><a href="#benefits" className="text-white font-bold">Benefits</a></li>
+            <ul className="space-y-8">
+              <li><a href="#why" className="text-white font-bold text-xl">Why?</a></li>
+              <li><a href="#how" className="text-white font-bold text-xl">How it works</a></li>
+              <li><a href="#benefits" className="text-white font-bold text-xl">Benefits</a></li>
             </ul>
           </div>
         )}
@@ -57,10 +52,10 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 p-4 flex flex-col items-start">
             <h1 className="text-5xl font-bold mb-4">Seamless Parking Management</h1>
-            <p className="text-lg mb-4">Say goodbye to the hassle and inconveniences of traditional towing, and welcome the future of parking enforcement with HHIP. Discover why HHIP is the superior choice compared to towing.</p>
-            <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
-              Get a Quote
-            </button>
+            <p className="text-lg mb-4">Say goodbye to the hassle and inconveniences of traditional towing, and welcome the future of parking enforcement with HHIPE. Discover why HHIPE is the superior choice compared to towing.</p>
+            <a className="bg-yellow text-navy font-bold py-2 px-4 rounded" href="mailto:gregg@digital-diversity.com">
+            Get a Quote
+            </a>
           </div>
         </div>
 
@@ -78,7 +73,7 @@ export default function Home() {
           {/* Section Heading */}
           <div className="text-center mb-8 p-4">
             <h2 className="text-xl font-bold text-yellow py-4">WHY THIS PRODUCT</h2>
-            <h3 className="text-3xl font-bold text-blue pb-8">Why Choose HHIP?</h3>
+            <h3 className="text-3xl font-bold text-blue pb-8">Why Choose HHIPE?</h3>
           </div>
 
           {/* Card Container */}
@@ -223,19 +218,19 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 items-center">
             <div className="image-column pt-8">
               <div className="image-container">
-                <Image src="/White.png" alt="Logo" width={50} height={50} />
+                <Image src="/LOGOBLUEWEB.png" alt="Logo" width={200} height={100} quality={100}/>
               </div>
             </div>
             <div className=" flex flex-col p-8">
               <h1 className="text-md text-navy font-bold p-2">NAVIGATION</h1>
-              <a href="#why" className="text-white font-bold p-2 text-md">Why?</a>
-              <a href="#how" className="text-white font-bold p-2 text-md">How it works</a>
-              <a href="#benefits" className="text-white font-bold p-2 text-md">Benefits</a>
+              <a href="#why" className="text-navy font-bold p-2 text-md">Why?</a>
+              <a href="#how" className="text-navy font-bold p-2 text-md">How it works</a>
+              <a href="#benefits" className="text-navy font-bold p-2 text-md">Benefits</a>
             </div>
             <div className="p-8">
-              <button className="bg-yellow text-navy font-bold py-2 px-4 rounded">
+              <a className="bg-blue text-white font-bold py-2 px-4 rounded" href="mailto:gregg@digital-diversity.com">
                 Get a Quote
-              </button>
+              </a>
             </div>
           </div>
         </div>
