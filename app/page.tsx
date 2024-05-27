@@ -51,7 +51,8 @@ export default function Home() {
             <Image src="/Hero.svg" alt="art" width={600} height={600} className="bg-blue rounded-md drop-shadow-md" />
           </div>
           <div className="md:w-1/2 p-4 flex flex-col items-start">
-            <h1 className="text-5xl font-bold mb-4">Seamless Parking Management</h1>
+          <h1 className="text-3xl font-bold mb-4">Hilton Head Island Parking Enforcement</h1>
+            <h1 className="text-2xl font-bold mb-4">Seamless Parking Management</h1>
             <p className="text-lg mb-4">Say goodbye to the hassle and inconveniences of traditional towing, and welcome the future of parking enforcement with HHIPE. Efficiently handle violations with our simple tag-and-pay system, avoid towing damage, and enjoy the convenience of immediate, hassle-free resolution.</p>
             <a className="bg-yellow text-navy font-bold py-2 px-4 rounded" href="mailto:gregg@digital-diversity.com">
             Get a Quote
